@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>علم البيانات – مراجعة الوحدة الأولى (العاشر)</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f9fa;--card:#fff;--tx:#17262b;--mu:#5b6c72;--pr:#12788f;--ac:#e8f4f7;--ok:#1b8a4b;--no:#c0392b;--bd:#d6e3e7;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a1d;--card:#172529;--tx:#e8f1f3;--mu:#9bb0b6;--pr:#4cc3dc;--ac:#1d3338;--bd:#2a4046}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--tx);font-family:Tajawal,Tahoma,Arial,sans-serif;line-height:1.8;font-size:17px}
+header{background:var(--pr);color:#fff;padding:22px 16px;text-align:center}
+header h1{margin:0;font-size:1.5rem}header p{margin:4px 0 0;opacity:.9;font-size:.95rem}
+nav{display:flex;gap:6px;overflow-x:auto;padding:10px;background:var(--card);position:sticky;top:0;z-index:5;border-bottom:1px solid var(--bd)}
+nav button{flex:0 0 auto;border:1px solid var(--bd);background:var(--ac);color:var(--tx);padding:8px 14px;border-radius:20px;font:inherit;font-size:.95rem;cursor:pointer}
+nav button.on{background:var(--pr);color:#fff;border-color:var(--pr)}
+main{max-width:820px;margin:0 auto;padding:14px}
+section{display:none}section.on{display:block}
+h2{color:var(--pr);margin:.2em 0 .5em}h3{margin:1.2em 0 .3em}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px 16px;margin:12px 0}
+.key{background:var(--ac);border-right:5px solid var(--pr);padding:10px 14px;border-radius:10px;margin:10px 0}
+ul{padding-right:22px;margin:.4em 0}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.93rem}
+th,td{border:1px solid var(--bd);padding:6px 8px;text-align:right}th{background:var(--ac)}
+code{direction:ltr;unicode-bidi:isolate;background:var(--ac);padding:1px 6px;border-radius:6px;font-family:Consolas,monospace;font-size:.92rem}
+details{background:var(--card);border:1px solid var(--bd);border-radius:12px;margin:8px 0;padding:8px 14px}
+summary{cursor:pointer;font-weight:700}
+details .a{margin-top:6px;color:var(--ok)}
+.q{font-weight:700;margin-bottom:6px}
+.opt{display:block;width:100%;text-align:right;background:var(--card);color:var(--tx);border:1px solid var(--bd);border-radius:10px;padding:8px 12px;margin:5px 0;font:inherit;cursor:pointer}
+.opt.right{background:#d4f1df;border-color:var(--ok);color:#0b3d20}.opt.wrong{background:#f9d9d5;border-color:var(--no);color:#5a1710}
+.exp{display:none;font-size:.92rem;color:var(--mu);margin-top:4px}
+.btn{background:var(--pr);color:#fff;border:0;border-radius:10px;padding:10px 18px;font:inherit;cursor:pointer}
+#res{font-size:1.2rem;font-weight:700;text-align:center;margin:14px 0}
+footer{text-align:center;color:var(--mu);font-size:.85rem;padding:20px}
+</style>
+</head>
+<body>
+<header><h1>علم البيانات</h1><p>مراجعة الوحدة الأولى – المهارات الرقمية – الصف العاشر (فلسطين)</p></header>
+<nav id="nav"></nav>
+<main>
+
+<section id="s1" class="on">
+<h2>الدرس الأول: البيانات في عصر التحول الرقمي</h2>
+<div class="card"><h3>الجدول الإلكتروني</h3>
+<p>أداة رقمية لتنظيم البيانات داخل <b>صفوف وأعمدة</b> بحيث يسهل إدخالها ومعالجتها.</p>
+<ul><li><b>الصفوف (Rows):</b> محاور أفقية.</li><li><b>الأعمدة (Columns):</b> محاور عمودية.</li><li><b>الخلية (Cell):</b> تقاطع صف مع عمود، وهي مكان إدخال البيانات.</li><li><b>مرجع الخلية:</b> حرف العمود + رقم الصف، مثل <code>B2</code>.</li></ul>
+<div class="key">الإيراد اليومي = الكمية المباعة × سعر البيع. الأرقام تظهر يمينًا تلقائيًا، وظهورها يسارًا يعني أنها نصوص ولن تعمل معها المعادلات.</div></div>
+<div class="card"><h3>الرقمنة والتحول الرقمي</h3>
+<div class="tw"><table><tr><th></th><th>الرقمنة</th><th>التحول الرقمي</th></tr>
+<tr><td>المعنى</td><td>تحويل المعلومات من الشكل الورقي إلى رقمي</td><td>توظيف التقنية والبيانات لتطوير العمل ودعم القرار</td></tr>
+<tr><td>مثال</td><td>دفتر الحضور إلى ملف Excel</td><td>نظام إلكتروني لمتابعة الطلبة (الإيسكول)</td></tr></table></div>
+<div class="key">الرقمنة تحوّل المعلومات إلى بيانات رقمية، أما التحول الرقمي فيستخدمها لتحسين العمل واتخاذ قرارات أفضل.</div>
+<p>دور الجداول: حفظ البيانات وتنظيمها، معالجتها وتحليلها، تحويلها إلى معلومات، ودعم القرار.</p></div>
+<h3>أسئلة محلولة</h3>
+<details><summary>1) أي مما يلي مثال على التحول الرقمي لا الرقمنة فقط؟</summary><div class="a">ب: استخدام نظام يحلل مبيعات المقصف وينبه عند نقص المخزون تلقائيًا، لأنه يستخدم البيانات في اتخاذ القرار.</div></details>
+<details><summary>2) كيف تتحقق أن القيم أرقام لا نصوص؟</summary><div class="a">ب: تظهر القيم بمحاذاة اليمين افتراضيًا.</div></details>
+<details><summary>3) صيغة الإيراد اليومي لعصير المانجا (الكمية في C2 والسعر في D2)؟</summary><div class="a">ب: <code>=C2*D2</code></div></details>
+<details><summary>4) ثلاثة أسباب تجعل جدولة البيانات ضرورية لصاحب مؤسسة</summary><div class="a">الوصول السريع للمعلومات، تقليل أخطاء التسجيل والحساب، معرفة الأصناف الأكثر طلبًا وأوقات الذروة لاتخاذ قرارات أفضل.</div></details>
+<details><summary>5) لماذا الدالة SUM أفضل من الجمع اليدوي؟</summary><div class="a">أسرع وأدق، تقلل الخطأ، وتتحدث تلقائيًا عند تغيّر القيم أو زيادة البيانات.</div></details>
+<details><summary>6) ما البيانات التي لا تُشارك عند إرسال جدول فيه معلومات أشخاص؟ ولماذا؟</summary><div class="a">الهوية، أرقام الهواتف، العناوين، العلامات والمعلومات الخاصة. حماية الخصوصية مسؤولية أخلاقية إضافة إلى كونها متطلبًا تقنيًا، لأن إساءة استخدامها تضر بأصحابها.</div></details>
+<details><summary>نشاط 3: صنّف الموقف (رقمنة أم تحول رقمي)</summary><div class="a">تصوير دفتر الديون وحفظه PDF: رقمنة. جدول مخزون ينبه عند النقص: تحول رقمي. كتابة الواجب بالحاسوب: رقمنة. توزيع الطلبات تلقائيًا حسب المناطق: تحول رقمي.</div></details>
+</section>
+
+<section id="s2">
+<h2>الدرس الثاني: تنظيم البيانات وأنواعها</h2>
+<div class="card"><h3>أنواع البيانات في برامج الجداول</h3>
+<div class="tw"><table><tr><th>النوع</th><th>مثال</th></tr><tr><td>نصية</td><td>طالب</td></tr><tr><td>رقمية</td><td>1250</td></tr><tr><td>عملة</td><td>1250 $</td></tr><tr><td>نسبة</td><td>15%</td></tr><tr><td>كسر</td><td>1/2</td></tr><tr><td>تاريخ</td><td>20/08/2026</td></tr><tr><td>وقت</td><td>08:30</td></tr><tr><td>منطقية</td><td>نعم / لا</td></tr></table></div>
+<div class="key">اختيار النوع الصحيح يساعد على تنظيم البيانات وتحليلها واتخاذ قرارات أفضل.</div></div>
+<div class="card"><h3>من البيانات إلى المعرفة</h3>
+<p>بيانات خام (28، 31، 25، 19، 22) ← معلومات (متوسط الأعمار 25 عامًا) ← معرفة (البرنامج يستهدف الشباب، فصُمم محتواه بالأسلوب المناسب).</p></div>
+<div class="card"><h3>قواعد إدخال سليمة</h3>
+<ul><li>نوع واحد من البيانات في العمود الواحد.</li><li>صيغة موحدة للتواريخ (dd/mm/yyyy) وللقيم مثل حاضر / غائب / متأخر.</li><li>علامة موحدة للقيم المفقودة.</li><li>الوحدة (دينار، كغم) في رأس العمود وليس داخل الخلية.</li></ul>
+<p>البيانات الضخمة (Big Data) تتميز بحجم هائل وسرعة وتنوع مصادر، وتطرح أسئلة عن من يجمعها ولأي غرض وكيف تُحمى.</p></div>
+<h3>أسئلة محلولة</h3>
+<details><summary>1) ماذا يحدث إذا أُدخلت قيمة نصية في عمود السعر؟</summary><div class="a">ج: الدوال المرتبطة ستعطي خطأ أو تتجاهل الخلية.</div></details>
+<details><summary>2) أي مما يلي بيانات رقمية للمقصف؟</summary><div class="a">ج: أسعار السلع وعدد القطع المباعة يوميًا.</div></details>
+<details><summary>3) قيم العمود B: "500 دينار"، "600"، "700". ما الأخطاء؟</summary><div class="a">"500 دينار" نص لأن الوحدة كُتبت داخل الخلية. وكذلك "600" و"700" إن كُتبت بين علامتي تنصيص فهي نصوص. التصحيح: إدخال 500 و600 و700 أرقامًا فقط، ووضع الوحدة في رأس العمود: (المبيعات بالدينار).</div></details>
+<details><summary>4) لماذا يسبب خلط الأنواع في العمود الواحد أخطاء؟ مثال محلي</summary><div class="a">لأن العمليات الحسابية والتحليل تتطلب نوعًا واحدًا. مثال: عمود أسعار الزيتون فيه "20" و"عشرون" و"20 شيكل"، فلن يُجمع بشكل صحيح.</div></details>
+<details><summary>5) مدير نشر أسماء الغائبين ودرجاتهم في مجموعة واتساب عامة للأهالي</summary><div class="a">أ) فيه انتهاك لخصوصية الطلاب وكشف لبياناتهم الشخصية أمام من لا يعنيهم. ب) البديل: إرسال بيانات كل طالب لوليّ أمره فقط عبر قناة خاصة أو نظام المدرسة.</div></details>
+<details><summary>6) صنّف البيانات</summary><div class="a">أ) نقاط الاختبار: رقمية. ب) اسم القرية: نصية. ج) مستوى الرضا (ممتاز/جيد/مقبول): نصية (فئات). د) درجة الحرارة: رقمية. هـ) اجتاز السنة نعم/لا: منطقية. و) تاريخ الامتحان: تاريخ.</div></details>
+</section>
+
+<section id="s3">
+<h2>الدرس الثالث: لغة الألوان والرسوم البيانية</h2>
+<div class="card"><h3>1) التنسيق الشرطي (Conditional Formatting)</h3>
+<p>يغيّر مظهر الخلية تلقائيًا (لون التعبئة أو الخط أو الأيقونات) عند تحقق شرط، دون تغيير قيمتها. خطواته: حدد الخلايا ← الصفحة الرئيسية Home ← التنسيق الشرطي ← أنشئ قاعدة ← موافق.</p>
+<p>أنواع الشروط: أكبر من / أصغر من، يساوي، بين قيمتين، يحتوي نصًا، صيغة مخصصة مثل <code>=B2&lt;C2</code>.</p></div>
+<div class="card"><h3>2) التحقق من صحة البيانات (Data Validation)</h3>
+<p>يحدد ما يُسمح بإدخاله في الخلية. خطواته: حدد الخلايا ← البيانات Data ← Data Validation ← Allow: Whole Number ← Between ← 0 و60.</p>
+<p>أنواعه: قائمة منسدلة، نطاق رقمي، طول نص (رقم الهوية 9 أرقام)، تاريخ ضمن نطاق، صيغة مخصصة.</p></div>
+<div class="card"><div class="tw"><table><tr><th></th><th>التنسيق الشرطي</th><th>التحقق من الصحة</th></tr><tr><td>التوقيت</td><td>على بيانات موجودة</td><td>أثناء الإدخال</td></tr><tr><td>الوظيفة</td><td>يلوّن وينبه بصريًا</td><td>يقيّد أو يرفض القيم</td></tr><tr><td>التدخل</td><td>لا يمنع أي إدخال</td><td>يمنع الخطأ من البداية</td></tr></table></div>
+<div class="key">التنسيق ينبّه + التحقق يمنع = نظام متكامل.</div></div>
+<div class="card"><h3>3) التمثيل البياني</h3>
+<div class="tw"><table><tr><th>المخطط</th><th>متى نستخدمه</th></tr><tr><td>العمودي</td><td>مقارنة فئات أو مجموعات</td></tr><tr><td>الشريطي</td><td>مقارنة أفقية عند طول الأسماء</td></tr><tr><td>الخطي</td><td>الاتجاه والتغير عبر الزمن</td></tr><tr><td>الدائري</td><td>الأجزاء من الكل (نسب)</td></tr><tr><td>المبعثر</td><td>العلاقة بين متغيرين رقميين</td></tr></table></div>
+<p>عناصر الرسم الجيد: عنوان واضح، تسميات المحاور، وحدات القياس، مفتاح توضيحي (Legend)، تباين لوني واضح يراعي عمى الألوان (تجنب أحمر مع أخضر)، وبساطة دون مبالغة.</p></div>
+<h3>أسئلة محلولة</h3>
+<details><summary>1) قاعدة تلوين الخلية بالأحمر عندما تقل الكمية C2 عن الحد الأدنى D2</summary><div class="a">أ: <code>=C2&lt;D2</code></div></details>
+<details><summary>2) المخطط الأنسب لمتابعة مبيعات العصير خلال فترة زمنية</summary><div class="a">أ: المخطط الخطي، لأنه يُظهر الاتجاه عبر الزمن.</div></details>
+<details><summary>3) لمنع إدخال كمية سالبة نستخدم…</summary><div class="a">أ: التحقق من صحة البيانات.</div></details>
+<details><summary>4) سمِّ الأداة المناسبة مع السبب</summary><div class="a">1) نموذج يمنع عمرًا أكبر من 100 أو أقل من 1: التحقق من صحة البيانات، لأنه يمنع الإدخال الخاطئ. 2) فاتورة تتحول للأحمر فوق 300 دينار: التنسيق الشرطي، لأنه يغيّر المظهر عند تحقق شرط.</div></details>
+<details><summary>5) هل وصف التنسيق الشرطي بـ«عيون الجدول» مناسب؟</summary><div class="a">نعم، فهو يلفت النظر إلى القيم المهمة وغير الطبيعية دون قراءة كل خلية.</div></details>
+<details><summary>6) لماذا لا يكفي إنشاء الرسم، بل يجب اختيار النوع المناسب؟</summary><div class="a">لأن لكل نوع غرضًا: الخطي للزمن، الدائري للنسب، العمودي للمقارنة. والنوع الخطأ يربك القارئ أو يعطي انطباعًا مضللًا.</div></details>
+<details><summary>7) عمود أعلى من بقية الأعمدة بوضوح، ماذا نستنتج؟ (احتمالان)</summary><div class="a">إما أن القيمة حقيقية وتدل على أداء متميز، وإما أنها خطأ إدخال (مثل زيادة صفر) وتحتاج تحققًا.</div></details>
+<details><summary>8) أي القيم (20، 100، -40، 70) لا تصلح في عمود الكمية المشتراة (0 إلى 60)؟</summary><div class="a">100 و70 لأنهما أكبر من 60، و-40 لأنها سالبة. أما 20 فمقبولة.</div></details>
+<details><summary>تدريب: اختر المخطط المناسب</summary><div class="a">علامات الطلاب في المواد: عمودي. درجات الحرارة خلال أسبوع: خطي. نسب مصروف الأسرة: دائري.</div></details>
+</section>
+
+<section id="s4">
+<h2>الدرس الرابع: خطوة نحو الدوال</h2>
+<div class="card"><h3>الدوال الأساسية</h3>
+<div class="tw"><table><tr><th>الدالة</th><th>عملها</th><th>مثال</th></tr>
+<tr><td>SUM</td><td>المجموع</td><td><code>=SUM(B2:B9)</code></td></tr>
+<tr><td>AVERAGE</td><td>المتوسط</td><td><code>=AVERAGE(B2:B9)</code></td></tr>
+<tr><td>MAX / MIN</td><td>الأعلى / الأدنى</td><td><code>=MAX(F2:F9)</code></td></tr>
+<tr><td>COUNT</td><td>عدّ الخلايا الرقمية</td><td><code>=COUNT(B2:B9)</code></td></tr>
+<tr><td>IF</td><td>قرار شرطي</td><td><code>=IF(G2&gt;0,"ربح","خسارة")</code></td></tr>
+<tr><td>COUNTIF</td><td>عدّ ما يحقق شرطًا</td><td><code>=COUNTIF(H2:H9,"خسارة")</code></td></tr>
+<tr><td>SUMIF</td><td>جمع ما يحقق شرطًا</td><td><code>=SUMIF(D2:D10,"نابلس",E2:E10)</code></td></tr></table></div>
+<div class="key">الربح = الإيراد − (الكمية × سعر التكلفة). عند سحب الدالة للأسفل تتغير المراجع تلقائيًا (C2 ثم C3 …).</div></div>
+<div class="card"><h3>التنبؤ بالبيانات</h3>
+<p>استخدام بيانات سابقة لتقدير قيم مستقبلية محتملة للمساعدة في التخطيط. له طريقتان: الأداة الجاهزة Forecast Sheet، ودالة <code>=FORECAST.LINEAR(x, known_y, known_x)</code>، مثل <code>=FORECAST.LINEAR(6,B2:B6,A2:A6)</code> لتقدير اليوم السادس.</p>
+<div class="tw"><table><tr><th></th><th>التحليل</th><th>التنبؤ</th></tr><tr><td>السؤال</td><td>ماذا حدث؟</td><td>ماذا قد يحدث؟</td></tr><tr><td>مثال</td><td>ما متوسط المبيعات؟</td><td>ما المبيعات المتوقعة غدًا؟</td></tr></table></div>
+<div class="key">التنبؤ تقدير وليس نتيجة مؤكدة، فيجب مراجعة الظروف قبل القرار.</div></div>
+<h3>أسئلة محلولة</h3>
+<details><summary>نشاط الزيتون: 250، 300، 275، 320، 355</summary><div class="a">المجموع 1500، المتوسط 300، الأكبر 355، الأصغر 250، عدد الأيام 5.</div></details>
+<details><summary>1) سحب <code>=C2*D2</code> من E2 إلى E3 يعطي…</summary><div class="a">ب: <code>=C3*D3</code></div></details>
+<details><summary>2) صيغة مجموع الإيرادات من F2 إلى F9</summary><div class="a">ب: <code>=SUM(F2:F9)</code></div></details>
+<details><summary>3) ماذا تحسب FORECAST.LINEAR؟ وأي مخطط يناسب عرض المبيعات الفعلية والمتوقعة؟</summary><div class="a">تحسب قيمة مستقبلية مقدّرة بناءً على بيانات تاريخية (ب). والمخطط المناسب هو الخطي لإظهار الاتجاه عبر الزمن وتمييز نقطة التنبؤ (ب).</div></details>
+<details><summary>4) اشرح كل دالة بلا مصطلحات تقنية</summary><div class="a">COUNTIF(B2:B20,"&lt;30"): تعدّ كم قيمة أقل من 30. IF(C5&gt;60,"ناجح","راسب"): إن كانت العلامة فوق 60 تكتب ناجح وإلا راسب. SUMIF: تجمع القيم المقابلة للصفوف التي مدينتها نابلس. MAX−MIN: الفرق بين أكبر قيمة وأصغرها.</div></details>
+<details><summary>5) الفرق بين SUM(B2:B10) والجمع بـ+ بين الخلايا</summary><div class="a">الاثنتان تعطيان النتيجة نفسها، لكن SUM أقصر وأقل عرضة للخطأ وتتكيف مع إضافة صفوف. الجمع بـ+ مقبول فقط لخلايا قليلة أو غير متجاورة.</div></details>
+<details><summary>6) صحّح الأخطاء</summary><div class="a"><code>=SUM(B2:B10)</code> (الأقواس ناقصة). <code>=IF(A1&gt;50,"ناجح","راسب")</code> (الفاصلة بدل الفاصلة المنقوطة والنصوص بين علامتي تنصيص). <code>=AVERAGE(A1,B1,C1)</code> (قوس الإغلاق ناقص). <code>=COUNTIF(B2:B10,"&gt;50")</code> (الشرط بين علامتي تنصيص).</div></details>
+<details><summary>7) IF متداخلة لتصنيف الدرجة</summary><div class="a"><code>=IF(A1&gt;=90,"ممتاز",IF(A1&gt;=75,"جيد جدًا",IF(A1&gt;=60,"جيد","يحتاج تحسين")))</code></div></details>
+<details><summary>8) مبيعات العصير في 4 أسابيع: 8، 9، 10، 12. توقع الأسبوع الخامس</summary><div class="a">إذا كانت الأسابيع 1 إلى 4 في A2:A5 والمبيعات في B2:B5: <code>=FORECAST.LINEAR(5,B2:B5,A2:A5)</code>، والنتيجة المتوقعة نحو 13 كرتونة.</div></details>
+</section>
+
+<section id="s5">
+<h2>الاختبار النهائي</h2>
+<p>12 سؤالًا من الدروس الأربعة. اضغط الإجابة لترى الشرح.</p>
+<div id="quiz"></div>
+<div id="res"></div>
+<div style="text-align:center"><button class="btn" onclick="resetQ()">إعادة الاختبار</button></div>
+</section>
+</main>
+<footer>مراجعة مبنية على كتاب المهارات الرقمية – الصف العاشر (الطبعة الأولى 2026). هذا الموقع للمراجعة وليس بديلًا عن الكتاب.</footer>
+
+<script>
+var T=["الدرس 1","الدرس 2","الدرس 3","الدرس 4","الاختبار"],nav=document.getElementById("nav");
+T.forEach(function(t,i){var b=document.createElement("button");b.textContent=t;b.onclick=function(){show(i)};nav.appendChild(b)});
+function show(i){document.querySelectorAll("section").forEach(function(s,k){s.classList.toggle("on",k==i)});nav.querySelectorAll("button").forEach(function(b,k){b.classList.toggle("on",k==i)});window.scrollTo(0,0);try{location.hash="l"+(i+1)}catch(e){}}
+var Q=[
+["الصف والعمود يتقاطعان في…",["الدالة","الخلية","المخطط","الورقة"],1,"تقاطع الصف مع العمود هو الخلية، ومرجعها مثل B2."],
+["تحويل دفتر الحضور الورقي إلى ملف Excel يسمى…",["تحولًا رقميًا","تنبؤًا","رقمنة","تحققًا"],2,"نقل المعلومات من الشكل الورقي إلى الرقمي هو الرقمنة."],
+["ظهور قيمة رقمية بمحاذاة اليسار يعني غالبًا أنها…",["رقم صحيح","نص","تاريخ","منطقية"],1,"الأرقام تُحاذى يمينًا افتراضيًا، واليسار يدل على نص."],
+["أي قيمة منطقية؟",["20/08/2026","15%","نعم / لا","08:30"],2,"نعم / لا من النوع المنطقي."],
+["أفضل طريقة لكتابة الوحدة (دينار) في الجدول…",["داخل كل خلية","في رأس العمود","في عمود آخر لكل خلية","لا تُكتب"],1,"الوحدة توضع في رأس العمود لتبقى الخلايا أرقامًا."],
+["أداة تلوّن الخلية الحمراء عند تحقق شرط دون منع الإدخال…",["التحقق من الصحة","التنسيق الشرطي","FORECAST","الرسم البياني"],1,"التنسيق الشرطي ينبّه بصريًا ولا يمنع."],
+["أداة تمنع إدخال كمية سالبة…",["التحقق من صحة البيانات","التنسيق الشرطي","تغيير لون الخط","نسخ الجدول"],0,"التحقق من الصحة يرفض القيم الخاطئة أثناء الإدخال."],
+["المخطط الأنسب لإظهار نسب مصروف الأسرة من الكل…",["الخطي","المبعثر","الدائري","الشريطي"],2,"الدائري يُظهر الأجزاء من الكل."],
+["المخطط الأنسب لتتبع تغير درجات الحرارة خلال أسبوع…",["الخطي","الدائري","المبعثر","لا شيء"],0,"الخطي يظهر الاتجاه عبر الزمن."],
+["الدالة التي تحسب متوسط B2 إلى B9…",["=SUM(B2:B9)","=MAX(B2:B9)","=AVERAGE(B2:B9)","=COUNT(B2:B9)"],2,"AVERAGE تحسب المتوسط."],
+["الدالة التي تعدّ الخلايا التي تحقق شرطًا مثل أقل من 30…",["COUNTIF","SUMIF","COUNT","MIN"],0,"COUNTIF تعدّ الخلايا المطابقة للشرط."],
+["ما الذي تحسبه FORECAST.LINEAR؟",["مجموع نطاق","قيمة مستقبلية مقدّرة من بيانات سابقة","أعلى قيمة","المتوسط"],1,"تقدّر قيمة مستقبلية اعتمادًا على بيانات سابقة، وهي ليست مؤكدة."]
+];
+var sc=0,dn=0;
+function build(){sc=0;dn=0;document.getElementById("res").textContent="";var z=document.getElementById("quiz");z.innerHTML="";
+Q.forEach(function(q,i){var c=document.createElement("div");c.className="card";var h=document.createElement("div");h.className="q";h.textContent=(i+1)+") "+q[0];c.appendChild(h);
+var ex=document.createElement("div");ex.className="exp";ex.textContent=q[3];
+q[1].forEach(function(o,k){var b=document.createElement("button");b.className="opt";b.textContent=o;
+b.onclick=function(){if(c.dataset.d)return;c.dataset.d=1;dn++;var bs=c.querySelectorAll(".opt");bs[q[2]].classList.add("right");if(k==q[2])sc++;else b.classList.add("wrong");ex.style.display="block";
+if(dn==Q.length)document.getElementById("res").textContent="نتيجتك: "+sc+" من "+Q.length+(sc>=10?" – ممتاز":sc>=7?" – جيد":" – راجع الدروس وأعد المحاولة")};
+c.appendChild(b)});c.appendChild(ex);z.appendChild(c)})}
+function resetQ(){build();window.scrollTo(0,0)}
+build();
+var m=(location.hash||"").match(/^#l([1-5])$/);show(m?+m[1]-1:0);
+</script>
+</body>
+</html>
